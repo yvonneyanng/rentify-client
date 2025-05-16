@@ -54,13 +54,7 @@ const NavBar: React.FC<NavBarProps> = ({
         <Box flex={1} minW={0}>
           <SearchBar value={search} onChange={onSearchChange} />
         </Box>
-        <Box
-          bg="gray.900"
-          borderRadius="lg"
-          border="1px solid"
-          // borderColor="gray.700"
-          p={1}
-        >
+        <Box p={1}>
           <select
             value={filter}
             onChange={(e) => onFilterChange(e.target.value)}
@@ -69,6 +63,8 @@ const NavBar: React.FC<NavBarProps> = ({
               borderRadius: "0.5rem",
               fontWeight: "bold",
               padding: "0.5rem",
+              border: "1px solid",
+              borderColor: "#2b2b2b",
             }}
           >
             <option value="">All Types</option>
