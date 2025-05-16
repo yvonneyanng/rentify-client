@@ -7,8 +7,6 @@ export const api = axios.create({
   baseURL: API_URL,
 });
 
-console.log("All env:", import.meta.env);
-
 export async function fetchCars(params?: {
   search?: string;
   type?: string;
