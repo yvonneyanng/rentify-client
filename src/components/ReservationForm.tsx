@@ -147,11 +147,11 @@ const ReservationForm: React.FC = () => {
           justifyContent="start"
         >
           <Image
-            src={car.image || placeholder}
+            src="/placeholder.png"
             alt="Car"
             w="300px"
             h="200px"
-            objectFit="contain"
+            objectFit="cover"
             rounded="md"
             mb={2}
             bg="#222"
