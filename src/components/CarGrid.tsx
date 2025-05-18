@@ -3,7 +3,6 @@ import type { Car } from "../types";
 import { fetchCars } from "../api";
 import { useNavigate } from "react-router-dom";
 import { SimpleGrid, Box, Text, Button, Image, Flex } from "@chakra-ui/react";
-import placeholder from "/placeholder.png";
 
 interface CarGridProps {
   search?: string;
@@ -93,7 +92,7 @@ const CarGrid: React.FC<CarGridProps> = ({
             _hover={{ boxShadow: "xl" }}
           >
             <Image
-              src={car.image || placeholder}
+              src="/placeholder.png"
               alt="Car"
               w="100%"
               h="150px"

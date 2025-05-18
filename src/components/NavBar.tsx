@@ -20,7 +20,7 @@ const NavBar: React.FC<NavBarProps> = ({ title }) => {
       boxShadow="sm"
       backdropFilter="blur(8px)"
       py={4}
-      px={{ base: 2, md: 6 }} // Using md: 6 from OrderConfirmation for wider padding
+      px={{ base: 2, md: 6 }}
       minW={0}
       mb={8}
     >

@@ -20,10 +20,10 @@ export interface Customer {
 }
 
 export interface Rental {
-  startDate: string; // ISO date string
-  rentalPeriod: number; // in days
+  startDate: string;
+  rentalPeriod: number;
   totalPrice: number;
-  orderDate: string; // ISO date string
+  orderDate: string;
 }
 
 export interface Order {
