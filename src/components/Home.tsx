@@ -24,6 +24,7 @@ const Home: React.FC = () => {
         filter={filter}
         onFilterChange={setFilter}
         filterOptions={filterOptions}
+        onLogoClick={() => setSearch("")}
       />
       <CarGrid key={location.key} search={search} type={filter} />
     </>

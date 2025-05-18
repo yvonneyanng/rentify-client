@@ -9,6 +9,7 @@ interface NavBarProps {
   filter: string;
   onFilterChange: (val: string) => void;
   filterOptions: string[];
+  onLogoClick?: () => void;
 }
 
 const NavBar: React.FC<NavBarProps> = ({
@@ -17,6 +18,7 @@ const NavBar: React.FC<NavBarProps> = ({
   filter,
   onFilterChange,
   filterOptions,
+  onLogoClick,
 }) => {
   const navigate = useNavigate();
 
@@ -48,7 +50,10 @@ const NavBar: React.FC<NavBarProps> = ({
           h={12}
           w="auto"
           maxW="sm"
-          onClick={() => navigate("/")}
+          onClick={() => {
+            if (onLogoClick) onLogoClick();
+            navigate("/");
+          }}
           cursor="pointer"
         />
         <Box flex={1} minW={0}>
