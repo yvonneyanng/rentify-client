@@ -3,7 +3,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import { fetchCars, placeOrder, confirmOrder } from "../api";
 import type { Car, Order } from "../types";
 import { Box, Flex, Stack, Input, Button, Text, Image } from "@chakra-ui/react";
-import placeholder from "/placeholder.png";
 import NavBar from "@/components/NavBar";
 
 const ReservationForm: React.FC = () => {
